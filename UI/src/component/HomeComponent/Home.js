@@ -1,9 +1,12 @@
 import React from 'react';
 import './Home.css';
+import Banner from '../BannerComponent/Banner'; // ✅ Add this line
 
 function Home() {
   return (
     <>
+      <Banner /> {/* ✅ Add this component here */}
+
       <div className="hero-section text-white py-5">
         <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
           
@@ -15,12 +18,6 @@ function Home() {
               optio quis sit odio nemo quisquam. Eius quos reiciendis eum vel eum voluptatem
               eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit.
             </p>
-
-            {/* SEARCH BAR */}
-           {/*  <div className="input-group mb-4 shadow" style={{ maxWidth: "500px" }}>
-              <input type="text" className="form-control" placeholder="Enter ZIP code or City" />
-              <button className="btn btn-primary">Search</button>
-            </div> */}
 
             {/* STATS */}
             <div className="d-flex gap-4 flex-wrap mt-4">
@@ -46,12 +43,11 @@ function Home() {
           {/* RIGHT IMAGE */}
           <div className="hero-image text-center">
             <img
-              src="/assets/img/assets/img/hero-img.svg" // Replace with your image
+              src="/assets/img/assets/img/hero-img.svg"
               alt="Home"
               className="img-fluid"
               style={{ maxHeight: "400px" }}
             />
-            
           </div>
         </div>
       </div>
